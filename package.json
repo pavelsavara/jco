@@ -7,8 +7,13 @@
     "jco": "src/jco.js"
   },
   "exports": {
-    "browser": "./src/browser.js",
-    "default": "./src/api.js"
+    "browser": {
+      "types":"./src/browser.d.ts",
+      "default":"./src/browser.js"
+    },
+    "default": {
+      "default":"./src/api.js"
+    }
   },
   "imports": {
     "#ora": {
